@@ -9,7 +9,9 @@ export default class TheirCards extends React.Component {
                 {theirStuff.map((follower, index) => {
                     return (
                         <section key={index}>
-                            <h3>{follower.login}</h3>
+                            <h3>
+                                {index} {follower.login}
+                            </h3>
                         </section>
                     );
                 })}

@@ -11,9 +11,12 @@ export default class MyCard extends React.Component {
                 <p>{myStuff.location}</p>
                 <p>{myStuff.bio}</p>
                 <div>
-                    <h5>Total Public Repos: {myStuff.public_repos}</h5>
-                    <h5>Total Followers: {myStuff.followers}</h5>
-                    <h5>Total Following: {myStuff.following}</h5>
+                    <img src={myStuff.avatar_url} />
+                    <div>
+                        <h5>Total Public Repos: {myStuff.public_repos}</h5>
+                        <h5>Total Followers: {myStuff.followers}</h5>
+                        <h5>Total Following: {myStuff.following}</h5>
+                    </div>
                 </div>
                 <h6>GitHub provided this info here: {myStuff.url}</h6>
             </section>
