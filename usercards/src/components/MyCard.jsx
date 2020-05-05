@@ -1,7 +1,5 @@
 import React from 'react';
 
-import axios from 'axios';
-
 export default class MyCard extends React.Component {
     render() {
         console.log(this.props.myData);
